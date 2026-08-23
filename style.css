@@ -1,3 +1,52 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page */
 body {
-    background-color: lightblue;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Navigation */
+nav {
+    margin-bottom: 25px;
+}
+
+nav a {
+  
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+}
+  nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Sections */
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 10px;
 }
