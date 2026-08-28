@@ -4,145 +4,448 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Krrish | Portfolio</title>
+
+    <meta name="description"
+        content="Portfolio of Krrish Kumar Singh - CSE Student, Java Developer and DSA Enthusiast">
+
+    <title>Krrish Kumar Singh | Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
     <header>
 
-        <nav>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+        <nav class="navbar">
+
+            <a href="#" class="logo">K<span>.</span></a>
+
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+
         </nav>
 
-        <h1>Krrish Kumar Singh</h1>
-        <p>CSE Student | Java Developer | DSA Enthusiast</p>
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <div class="hero">
+
+            <p class="hero-label">COMPUTER SCIENCE ENGINEERING STUDENT</p>
+
+            <h1>
+                Krrish Kumar
+                <span>Singh</span>
+            </h1>
+
+            <p class="hero-role">
+                Java Developer <span>|</span> DSA Enthusiast
+            </p>
+
+            <p class="hero-description">
+                I build practical projects, solve programming problems,
+                and continuously improve my software development skills
+                through hands-on learning.
+            </p>
+
+           <div class="hero-buttons">
+
+    <a href="#projects" class="btn primary-btn">
+        View My Work
+    </a>
+
+    <a href="Resume.pdf" download class="btn secondary-btn">
+        Download Resume ↓
+    </a>
+
+    <a href="#contact" class="btn outline-btn">
+        Get In Touch
+    </a>
+
+</div>
+
+        </div>
 
     </header>
 
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
     <main>
 
-        <!-- About Section -->
-        <section id="about">
-            <h2>About Me</h2>
 
-            <p>
-                I'm a Computer Science Engineering student interested in software
-                development and problem solving. I enjoy learning how technology works
-                and applying what I learn through practical projects.
-            </p>
+        <!-- =========================
+             ABOUT
+        ========================== -->
 
-            <p>
-                I'm currently focused on improving my Java programming and Data Structures
-                and Algorithms skills while building a strong foundation in SQL, Git and
-                GitHub. My goal is to become a skilled software developer by continuously
-                learning and working on meaningful projects.
-            </p>
+        <section id="about" class="section">
 
-            <p>
-                Outside of coding, I enjoy exploring new technologies, practicing
-                programming problems, and challenging myself to improve a little every day.
-            </p>
+            <div class="section-heading">
+                <p class="section-number">01</p>
+                <h2>About Me</h2>
+            </div>
 
-        </section>
+            <div class="about-content">
 
+                <div class="about-intro">
+                    <p>
+                        I'm a Computer Science Engineering student interested
+                        in software development and problem solving.
+                    </p>
+                </div>
 
-        <!-- Skills Section -->
-        <section id="skills">
-            <h2>Skills</h2>
+                <div class="about-text">
 
-            <div class="skills-list">
-                <span>Java</span>
-                <span>C</span>
-                <span>SQL</span>
-                <span>Git</span>
-                <span>GitHub</span>
-                <span>Data Structures & Algorithms</span>
+                    <p>
+                        I enjoy learning how technology works and applying
+                        what I learn through practical projects.
+                    </p>
+
+                    <p>
+                        I'm currently focused on improving my Java programming
+                        and Data Structures & Algorithms skills while building
+                        a strong foundation in SQL, Git and GitHub.
+                    </p>
+
+                    <p>
+                        My goal is to become a skilled software developer by
+                        continuously learning and working on meaningful projects.
+                    </p>
+
+                    <p>
+                        Outside of coding, I enjoy exploring new technologies,
+                        practicing programming problems, and challenging myself
+                        to improve a little every day.
+                    </p>
+
+                </div>
+
             </div>
 
         </section>
 
 
-        <!-- Projects Section -->
-        <section id="projects">
-            <h2>Projects</h2>
+        <!-- =========================
+             SKILLS
+        ========================== -->
 
-            <article>
+        <section id="skills" class="section">
+
+            <div class="section-heading">
+                <p class="section-number">02</p>
+                <h2>Skills</h2>
+            </div>
+
+            <p class="section-subtitle">
+                Technologies and concepts I'm currently working with.
+            </p>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <div class="skill-number">01</div>
+                    <h3>Java</h3>
+                    <p>Programming & problem solving</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-number">02</div>
+                    <h3>Data Structures & Algorithms</h3>
+                    <p>Logic, optimization & problem solving</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-number">03</div>
+                    <h3>SQL</h3>
+                    <p>Database fundamentals & queries</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-number">04</div>
+                    <h3>C</h3>
+                    <p>Programming fundamentals</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-number">05</div>
+                    <h3>Git</h3>
+                    <p>Version control</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-number">06</div>
+                    <h3>GitHub</h3>
+                    <p>Code management & collaboration</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PROJECTS
+        ========================== -->
+
+        <section id="projects" class="section">
+
+            <div class="section-heading">
+                <p class="section-number">03</p>
+                <h2>Projects</h2>
+            </div>
+
+            <p class="section-subtitle">
+                A look at what I've built while learning.
+            </p>
+
+
+            <article class="project-card">
+
+                <div class="project-top">
+
+                    <span class="project-tag">
+                        MACHINE LEARNING
+                    </span>
+
+                    <span class="project-index">
+                        01
+                    </span>
+
+                </div>
+
                 <h3>Cattle Breed Classification</h3>
 
-                <p>
-                    A machine learning project focused on identifying cattle breeds
-                    from images. The project uses image classification techniques
-                    to analyze visual features and predict the corresponding cattle breed.
+                <p class="project-description">
+                    A machine learning project focused on identifying
+                    cattle breeds from images. The project uses image
+                    classification techniques to analyze visual features
+                    and predict the corresponding cattle breed.
                 </p>
 
-                <p>
-                    <strong>Technologies:</strong>
-                    Python, Machine Learning, Image Classification
-                </p>
+                <div class="technologies">
 
-                <a href="https://github.com/krrishkumar31072006-lgtm" target="_blank">
-                    View on GitHub
+                    <span>Python</span>
+                    <span>Machine Learning</span>
+                    <span>Image Classification</span>
+
+                </div>
+
+                <a
+                    href="https://github.com/krrishkumar31072006-lgtm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link">
+
+                    View Project
+                    <span>↗</span>
+
                 </a>
+
             </article>
 
         </section>
 
 
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact</h2>
+        <!-- =========================
+             CONTACT
+        ========================== -->
 
-            <p>
-                Email:
-                <a href="mailto:krrishkumar31072006@gmail.com">
-                    krrishkumar31072006@gmail.com
-                </a>
+        <section id="contact" class="section contact-section">
+
+            <div class="section-heading">
+                <p class="section-number">04</p>
+                <h2>Let's Connect</h2>
+            </div>
+
+            <p class="contact-intro">
+                Have an opportunity, idea, or simply want to talk about
+                technology? Feel free to reach out.
             </p>
 
-            <p>
-                GitHub:
-                <a href="https://github.com/krrishkumar31072006-lgtm" target="_blank">
-                    GitHub Profile
-                </a>
-            </p>
+            <div class="contact-layout">
 
-            <p>
-                LinkedIn:
-                <a href="https://www.linkedin.com/in/krrish-kumar-singh-06756a37a/" target="_blank">
-                    LinkedIn Profile
-                </a>
-            </p>
 
-            <h3>Send me a message</h3>
+                <!-- CONTACT DETAILS -->
 
-            <form action="mailto:krrishkumar31072006@gmail.com" method="post" enctype="text/plain">
+                <div class="contact-details">
 
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
+    <a
+        href="mailto:krrishkumar31072006@gmail.com"
+        class="contact-item">
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+        <span class="contact-label">EMAIL</span>
 
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
+        <span>
+            krrishkumar31072006@gmail.com
+        </span>
 
-                <button type="submit">Send Message</button>
+    </a>
 
-            </form>
+
+    <a
+        href="https://github.com/krrishkumar31072006-lgtm"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="contact-item social-item">
+
+        <div class="social-icon">
+
+            <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true">
+
+                <path
+                    d="M12 2C6.48 2 2 6.58 2 12.24c0 4.52 2.87 8.35 6.84 9.71.5.1.68-.22.68-.49
+                    0-.24-.01-1.04-.01-1.89-2.78.62-3.37-1.2-3.37-1.2-.46-1.19-1.11-1.51-1.11-1.51
+                    -.91-.64.07-.63.07-.63 1.01.07 1.54 1.06 1.54 1.06.9 1.58 2.36 1.13 2.94.86
+                    .09-.67.35-1.13.64-1.39-2.22-.26-4.55-1.14-4.55-5.06 0-1.12.39-2.03 1.03-2.75
+                    -.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05A9.18 9.18 0 0 1 12 6.9c.85 0
+                    1.7.12 2.5.36 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03
+                    1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.95.68 1.92 0 1.39-.01
+                    2.51-.01 2.85 0 .27.18.59.69.49A10.25 10.25 0 0 0 22 12.24C22 6.58 17.52 2 12 2z">
+                </path>
+
+            </svg>
+
+        </div>
+
+        <div>
+            <span class="contact-label">GITHUB</span>
+            <span>GitHub Profile ↗</span>
+        </div>
+
+    </a>
+
+
+    <a
+        href="https://www.linkedin.com/in/krrish-kumar-singh-06756a37a/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="contact-item social-item">
+
+        <div class="social-icon">
+
+            <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true">
+
+                <path
+                    d="M20.45 20.45h-3.56v-5.58c0-1.33-.03-3.04-1.85-3.04
+                    -1.85 0-2.13 1.45-2.13 2.94v5.68H9.35V8.99h3.41v1.56h.05
+                    c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.29z
+                    M5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14z
+                    M7.12 20.45H3.56V8.99h3.56v11.46z">
+                </path>
+
+            </svg>
+
+        </div>
+
+        <div>
+            <span class="contact-label">LINKEDIN</span>
+            <span>LinkedIn Profile ↗</span>
+        </div>
+
+    </a>
+
+</div>
+
+
+                <!-- CONTACT FORM -->
+
+                <form
+                    action="mailto:krrishkumar31072006@gmail.com"
+                    method="post"
+                    enctype="text/plain">
+
+                    <div class="input-group">
+
+                        <label for="name">Name</label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Your name"
+                            required>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="email">Email</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="your@email.com"
+                            required>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="message">Message</label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            placeholder="Write your message..."
+                            required></textarea>
+
+                    </div>
+
+
+                    <button type="submit">
+                        Send Message <span>→</span>
+                    </button>
+
+                </form>
+
+            </div>
 
         </section>
 
     </main>
 
 
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
     <footer>
-        <p>© 2026 Krrish Kumar Singh. All rights reserved.</p>
+
+        <div class="footer-content">
+
+            <p class="footer-logo">K.</p>
+
+            <p>
+                Built by Krrish Kumar Singh
+            </p>
+
+            <p class="copyright">
+                © 2026 Krrish Kumar Singh
+            </p>
+
+        </div>
+
     </footer>
+
 
 </body>
 
