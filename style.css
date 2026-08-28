@@ -23,7 +23,10 @@ header {
 
 /* Navigation */
 nav {
-    margin-bottom: 25px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 nav a {
@@ -49,4 +52,142 @@ section {
     padding: 30px;
     margin-bottom: 25px;
     border-radius: 10px;
+}
+article a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 14px;
+    background-color: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+article a:hover {
+    background-color: #444;
+}
+article {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.skills-list span {
+    background-color: #222;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 20px;
+}
+.skills-list span:hover {
+    transform: translateY(-2px);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+}
+form input,
+form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+form button {
+    width: fit-content;
+    padding: 10px 18px;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+form button:hover {
+    background-color: #444;
+}
+form label {
+    font-weight: bold;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    opacity: 0.8;
+}
+/* Mobile Responsive Design */
+@media (max-width: 600px) {
+
+    header {
+        padding: 30px 15px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    nav a {
+        margin: 0 6px;
+        font-size: 14px;
+    }
+
+    main {
+        margin: 25px auto;
+        padding: 0 15px;
+    }
+
+    section {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    article {
+        padding: 15px;
+    }
+
+    form input,
+    form textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    form button {
+        width: 100%;
+    }
 }
