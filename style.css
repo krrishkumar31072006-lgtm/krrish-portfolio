@@ -1,11 +1,18 @@
-/* Basic reset */
+/* =========================
+   Basic Reset
+========================= */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Page */
+
+/* =========================
+   Page
+========================= */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
@@ -13,7 +20,11 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
+
+/* =========================
+   Header
+========================= */
+
 header {
     background-color: #222;
     color: white;
@@ -21,38 +32,96 @@ header {
     text-align: center;
 }
 
-/* Navigation */
+header h1 {
+    margin-bottom: 5px;
+}
+
+
+/* =========================
+   Navigation
+========================= */
+
 nav {
-     display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    margin-bottom: 25px;
 }
 
 nav a {
-  
     color: white;
     text-decoration: none;
     margin: 0 12px;
 }
-  nav a:hover {
+
+nav a:hover {
     text-decoration: underline;
 }
 
-/* Main content */
+
+/* =========================
+   Main Content
+========================= */
+
 main {
     max-width: 900px;
     margin: 40px auto;
     padding: 0 20px;
 }
 
-/* Sections */
+
+/* =========================
+   Sections
+========================= */
+
 section {
     background-color: white;
     padding: 30px;
     margin-bottom: 25px;
     border-radius: 10px;
 }
+
+
+/* =========================
+   Skills
+========================= */
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-list span {
+    background-color: #222;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 20px;
+    transition: transform 0.2s;
+}
+
+.skills-list span:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   Project Card
+========================= */
+
+article {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+    border: 1px solid #ddd;
+}
+
+article h3 {
+    margin-top: 0;
+}
+
 article a {
     display: inline-block;
     margin-top: 10px;
@@ -66,84 +135,67 @@ article a {
 article a:hover {
     background-color: #444;
 }
-article {
-    background-color: #f8f8f8;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 15px;
-}
-.skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-.skills-list span {
-    background-color: #222;
-    color: white;
-    padding: 8px 14px;
-    border-radius: 20px;
-}
-.skills-list span:hover {
-    transform: translateY(-2px);
-}
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 500px;
-}
-form input,
-form textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 16px;
-}
-form button {
-    width: fit-content;
-    padding: 10px 18px;
-    background-color: #222;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 16px;
-}
-form button:hover {
-    background-color: #444;
-}
-form label {
-    font-weight: bold;
-}
+
+
+/* =========================
+   Contact Form
+========================= */
+
 form {
     display: flex;
     flex-direction: column;
     gap: 12px;
-}
-
-form input,
-form textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+    max-width: 500px;
 }
 
 form label {
     font-weight: bold;
 }
 
+form input,
+form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
 form button {
+    width: fit-content;
     padding: 10px 20px;
+    background-color: #222;
+    color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
+    font-size: 16px;
 }
 
 form button:hover {
-    opacity: 0.8;
+    background-color: #444;
 }
-/* Mobile Responsive Design */
+
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #666;
+}
+
+
+/* =========================
+   Mobile Responsive Design
+========================= */
+
 @media (max-width: 600px) {
 
     header {
@@ -156,6 +208,11 @@ form button:hover {
 
     header p {
         font-size: 16px;
+    }
+
+    nav {
+        gap: 5px;
+        margin-bottom: 25px;
     }
 
     nav a {
@@ -184,7 +241,6 @@ form button:hover {
     form input,
     form textarea {
         width: 100%;
-        box-sizing: border-box;
     }
 
     form button {
