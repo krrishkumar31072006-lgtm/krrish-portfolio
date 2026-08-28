@@ -1,4 +1,22 @@
 /* =========================
+   CSS Variables
+========================= */
+
+:root {
+    --primary: #222;
+    --secondary: #444;
+    --background: #f5f5f5;
+    --surface: white;
+    --card: #f8f8f8;
+    --border: #ddd;
+    --text: #222;
+    --muted: #666;
+    --radius: 10px;
+    --transition: 0.3s ease;
+}
+
+
+/* =========================
    Basic Reset
 ========================= */
 
@@ -13,10 +31,14 @@
    Page
 ========================= */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #222;
+    background-color: var(--background);
+    color: var(--text);
     line-height: 1.6;
 }
 
@@ -26,7 +48,7 @@ body {
 ========================= */
 
 header {
-    background-color: #222;
+    background-color: var(--primary);
     color: white;
     padding: 30px;
     text-align: center;
@@ -53,10 +75,16 @@ nav a {
     color: white;
     text-decoration: none;
     margin: 0 12px;
+    transition: var(--transition);
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #ccc;
+}
+
+nav a:focus {
+    outline: 2px solid white;
+    outline-offset: 4px;
 }
 
 
@@ -76,10 +104,10 @@ main {
 ========================= */
 
 section {
-    background-color: white;
+    background-color: var(--surface);
     padding: 30px;
     margin-bottom: 25px;
-    border-radius: 10px;
+    border-radius: var(--radius);
 }
 
 
@@ -94,15 +122,15 @@ section {
 }
 
 .skills-list span {
-    background-color: #222;
+    background-color: var(--primary);
     color: white;
     padding: 8px 14px;
     border-radius: 20px;
-    transition: transform 0.2s;
+    transition: transform var(--transition);
 }
 
 .skills-list span:hover {
-    transform: translateY(-2px);
+    transform: translateY(-3px);
 }
 
 
@@ -110,30 +138,46 @@ section {
    Project Card
 ========================= */
 
+#projects {
+    display: grid;
+    gap: 20px;
+}
+
 article {
-    background-color: #f8f8f8;
+    background-color: var(--card);
     padding: 20px;
-    border-radius: 10px;
-    margin-top: 15px;
-    border: 1px solid #ddd;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+article:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
 article h3 {
-    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 article a {
     display: inline-block;
     margin-top: 10px;
     padding: 8px 14px;
-    background-color: #222;
+    background-color: var(--primary);
     color: white;
     text-decoration: none;
     border-radius: 6px;
+    transition: background-color var(--transition);
 }
 
 article a:hover {
-    background-color: #444;
+    background-color: var(--secondary);
+}
+
+article a:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 3px;
 }
 
 
@@ -154,10 +198,20 @@ form label {
 
 form input,
 form textarea {
+    width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 16px;
+    font-family: inherit;
+    transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 2px #ddd;
 }
 
 form textarea {
@@ -168,16 +222,23 @@ form textarea {
 form button {
     width: fit-content;
     padding: 10px 20px;
-    background-color: #222;
+    background-color: var(--primary);
     color: white;
     border: none;
     border-radius: 6px;
     cursor: pointer;
     font-size: 16px;
+    transition: background-color var(--transition), transform var(--transition);
 }
 
 form button:hover {
-    background-color: #444;
+    background-color: var(--secondary);
+    transform: translateY(-2px);
+}
+
+form button:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 3px;
 }
 
 
@@ -188,7 +249,7 @@ form button:hover {
 footer {
     text-align: center;
     padding: 25px;
-    color: #666;
+    color: var(--muted);
 }
 
 
@@ -213,6 +274,7 @@ footer {
     nav {
         gap: 5px;
         margin-bottom: 25px;
+        flex-wrap: wrap;
     }
 
     nav a {
@@ -236,11 +298,6 @@ footer {
 
     article {
         padding: 15px;
-    }
-
-    form input,
-    form textarea {
-        width: 100%;
     }
 
     form button {
